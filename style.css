@@ -1,58 +1,47 @@
 /* Fichier css pour CV */
 
 /* Image de fond et disposition du CV */
+body{
+    font-family: 'Anonymous Pro', monospace;
+}
+nav{
+    background-color: black;
 
-#full_page{
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 0;
+    border-bottom: solid 3px #9F9F9F;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    width: 600px;
+    padding: 200px 0;
+}
+
+#nom_prenom{
+    font-size: 3.5rem;
+    color: white;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 2px #9F9F9F;
+}
+
+
+#first_page{
     width: 100%;
     height: 100vh;
-    background-image: url("images/fond_techno.jpg");
+    background-image: url("images/portable.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-#page{
-    background-color: white;
-    width: 850px;
-    height: 90vh;
-    box-shadow: -25px 25px 20px black;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#selfie{
-    max-width: 125px;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 25px;
-
-}
-
-#right_page{
-    width: 70%;
-    text-align: center;
-}
-
-#left_page{
-    width: 30%;
-    text-align: center;
-}
-
-h2{
-    margin: 25px 0;
-    padding: 15px;
-    border-top: solid 3px #106C69;
-    margin-bottom: 0;
-
-}
-
-.mail{
-    margin-top: 0;
-}
-
-.logo{
-    max-width: 50px;
 }
