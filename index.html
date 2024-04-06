@@ -4,26 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation Clément Rioche</title>
+    <title>Portfolio Clément Rioche</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="reboot.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.bunny.net">
 </head>
 
 <body>
-    <main id="full_page">
-        <nav>
-            <ul id="navigation">
-                <li class="navigation_bar">Profil</li>
-                <li class="navigation_bar">Mon CV</li>
-                <li class="navigation_bar">Mes Projets</li>
-                <li class="navigation_bar">Contact</li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-dark bg-transparent fixed-top d-md-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Clément Rioche</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projets</a>
+                            </li>
+                            <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <section id="first_page">
-            <h1><span id="nom_prenom">Clément RIOCHE</span> <span id="tile_page">Développeur Web et Web Mobile</span></h1>
-        </section>
+
+        <nav class="navbar navbar-expand-md bg-transparent fixed-top d-none d-md-block">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: rgb(11, 236, 124)" ;>Clément Rioche</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: rgba(202,228,225)"
+                                ;>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: rgba(202,228,225)" ;>A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: rgba(202,228,225)" ;>Projets</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" style="color: rgba(202,228,225)" ;
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: rgba(202,228,225)" ;>Another
+                                        action</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: rgba(202,228,225)" ;>Something else
+                                        here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="full_page">
+
+        <div class="hidden">
+            <div class="presentation">
+                <h1>
+                    <span id="nom_prenom">Clément Rioche
+                    </span>
+<span id="title_page">Lorem ipsum dolor sit amet.</span>
+                </h1>
+            </div>
+        </div>
+        <div class="hidden">
+            <div class="about">
+                <h2>À propos</h2>
+                <p class="about__me">Welcome !
+                    Je m'appelle Clément Rioche, j'ai 31 ans et je suis actuellement en formation chez O'Clock pour apprendre le
+                    métier
+                    de développeur web.
+
+                    Après un début de carrière dans le domaine de l'optique, j'ai décidé de changer de voie afin de me
+                    permettre d'aquérir de nouvelles compétence dans un domaine passionnant, remplie de découverte et de challenges. Plus précisement le
+                    développement informatique spécialisé dans la réalisation d'application web et web mobile.
+                </p>
+            </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./app.js"></script>
+
 </body>
 
 </html>
+<!-- <nav>
+                <ul id="navigation">
+                    <li class="navigation_bar"><a href="">Profil</a></li>
+                    <li class="navigation_bar"><a href="">Mon CV</a></li>
+                    <li id="logo"><a href=""><img src="./images/logo-dragonball.png" alt="Logo home"></a></li>
+                    <li class="navigation_bar"><a href="">Mes Projets</a></li>
+                    <li class="navigation_bar"><a href="">Contact</a></li>
+                </ul>
+            </nav> -->
+
+<!--   Liens de script, jQuery et Bootstrap
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
