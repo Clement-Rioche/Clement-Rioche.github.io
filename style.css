@@ -36,6 +36,13 @@ body {
     0 0 54px rgb(11, 236, 124,0.92);
 }
 
+.section-accueil {
+    background-image: url('./images/photo_accueil.jpg');
+    background-size: cover;
+    background-position: right center; /* Décale l'image vers la droite */
+    background-origin: content-box; /* Élimine le contour de l'image */
+    background-blend-mode: multiply;
+}
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(202, 228, 225, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -203,8 +210,6 @@ h1{
     padding: 25px;
 }
 
-
-
 p.about__me{
     padding-top: 40px;
 }
@@ -322,7 +327,15 @@ p.about__me{
 .container img{
     position: absolute;
     width: 40px;
-    border-radius: 50%;
+    border: solid 1px #0bec7c;
+    border-radius: 25px;
+    box-shadow:
+    0 0 6px rgba(202,228,225),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgb(11, 236, 124,0.52),
+    0 0 21px rgb(11, 236, 124,0.92),
+    0 0 34px rgb(11, 236, 124,0.78),
+    0 0 54px rgb(11, 236, 124,0.92);
     right: -20px;
     top: 32px;
     z-index: 10;
@@ -332,7 +345,7 @@ p.about__me{
     left: -20px;
 }
 
-.timeline::after{
+.parcours::after{
     content: '';
     position: absolute;
     width: 6px;
@@ -388,10 +401,10 @@ p.about__me{
 }
 
 @media screen and (max-width: 767px){
-    .timeline{
+    .parcours{
         margin: 50px auto;
     }
-    .timeline::after{
+    .parcours::after{
         left: 31px;
     }
     .container{
